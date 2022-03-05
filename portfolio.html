@@ -5,64 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- шапка сайта -->
     <header>
-      <!-- шапка сайта -->
-      <a href="" class="logo"><span class="logo-part">Web</span>Studio</a>
+      <div class="container header-container">
+      <a href="" class="logo underlinenone"><span lang="en" class="logo-part">Web</span lang="en">Studio</a>
       <!-- навигация -->
       <nav class="main-nav">
         <ul class="nav-list">
-          <li>
-            <a class="link" href="./index.html">Студия</a>
+          <li class="list-style flex-item">
+            <a class="link general underlinenone" href="./index.html">Студия</a>
           </li>
-          <li>
-            <a class="link" href="">Портфолио</a>
+          <li class="list-style flex-item">
+            <a class="link general current underlinenone" href="">Портфолио</a>
           </li>
-          <li>
-            <a class="link" href="">Контакты</a>
-          </li>
+          <li class="list-style flex-item">
+            <a class="link general underlinenone" href="">Контакты</a>
+          </li class="list-style">
         </ul>
       </nav>
       <ul class="auth-nav">
-        <li>
-          <a class="link" href="mailto:info@devstudio.com"
+        <li class="list-style flex-item">
+          <a class="link general underlinenone" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="list-style flex-item">
+          <a class="link general underlinenone" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+      </div>
     </header>
 
     <!-- основной блок -->
     <main>
-      <section class="filter-nav">
+      <section class="filter-nav section">
+        <div class="container">
         <!-- скрытый заголовок -->
         <h1 class="hidden">Портфолио</h1>
-        <ul class="filter-list">
-          <li><button type="button" class="filter-btn">Все</button></li>
-          <li>
+        <ul class="filter-list list">
+          <li class="list-style filter-item"> <button type="button" class="filter-btn current-btn">Все</button></li>
+          <li class="list-style filter-item">
             <button type="button" class="filter-btn">Веб-сайты</button>
           </li>
-          <li>
+          <li class="list-style filter-item">
             <button type="button" class="filter-btn">Приложения</button>
           </li>
-          <li><button type="button" class="filter-btn">Дизайн</button></li>
-          <li>
+          <li class="list-style filter-item"> <button type="button" class="filter-btn">Дизайн</button></li>
+          <li class="list-style">
             <button type="button" class="filter-btn">Маркетинг</button>
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="filter-wrap">
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/technoquack.jpg"
@@ -72,7 +75,7 @@
             <h2 class="filter-title">Технокряк</h2>
             <p class="filter-text text">Веб-сайт</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/poster.jpg"
@@ -84,7 +87,7 @@
             </h2>
             <p class="filter-text text">Дизайн</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/restaurant.jpg"
@@ -96,7 +99,7 @@
             </h2>
             <p class="filter-text text">Приложение</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/prime.jpg"
@@ -106,7 +109,7 @@
             <h2 class="filter-title">Проект <span lang="en">Prime</span></h2>
             <p class="filter-text text">Маркетинг</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/boxes.jpg"
@@ -116,7 +119,7 @@
             <h2 class="filter-title">Проект <span lang="en">Boxes</span></h2>
             <p class="filter-text text">Приложение</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/inspiration.jpg"
@@ -126,7 +129,7 @@
             <h2 class="filter-title" lang="en">Inspiration has no Borders</h2>
             <p class="filter-text text">Веб-сайт</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/edition.jpg"
@@ -138,7 +141,7 @@
             </h2>
             <p class="filter-text text">Дизайн</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/lab.jpg"
@@ -148,7 +151,7 @@
             <h2 class="filter-title">Проект <span lang="en">LAB</span></h2>
             <p class="filter-text text">Маркетинг</p>
           </li>
-          <li>
+          <li class="list-style">
             <img
               class="filter-img"
               src="./images/business.jpg"
@@ -159,17 +162,19 @@
             <p class="filter-text text">Приложение</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!-- подвал сайта -->
     <footer class="footer">
-      <a href="" class="logo"><span class="logo-part">Web</span>Studio</a>
+      <div class="container">
+      <a href="" class="logo underlinenone"><span lang="en" class="logo-part">Web</span><span lang="en" class="logo-white">Studio</span></a>
       <address class="location">
-        <ul>
-          <li>
+        <ul class="list">
+          <li class="list-style">
             <a
-              class="map"
+              class="map underlinenone"
               href="https://goo.gl/maps/CNSafUn4p5a7UVto9"
               target="_blank"
               rel="noopener noreferrer"
@@ -177,14 +182,15 @@
               г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
+          <li class="list-style">
+            <a class="link underlinenone" href="mailto:info@example.com">info@example.com</a>
           </li>
-          <li>
-            <a class="link" href="tel:+380991111111">099 111 11 11</a>
+          <li class="list-style">
+            <a class="link underlinenone" href="tel:+380991111111">099 111 11 11</a>
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
