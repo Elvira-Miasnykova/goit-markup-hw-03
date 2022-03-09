@@ -88,9 +88,11 @@ img {
   padding-bottom: 32px;
 }
 
-.main-nav > .nav-list {
-  display: flex;
+.main-nav {
   margin-left: 93px;
+}
+.nav-list {
+  display: flex;
 }
 
 .auth-nav {
@@ -115,8 +117,6 @@ img {
   color: var(--accent-color);
 }
 .link.general {
-  padding: 5px 0;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -145,8 +145,8 @@ img {
 }
 
 .hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-bgcolor);
 }
@@ -280,6 +280,7 @@ img {
 
 /* team section */
 .team-section {
+  padding-top: 94px;
   background-color: var(--accent-bgcolor);
 }
 /* .team-item:not(:last-child) {
@@ -355,16 +356,24 @@ img {
 
   background-color: var(--white-txcolor);
 }
+.filter-container {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
 
 .filter-content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  /* border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee; */
 }
 .filter-img {
   background-color: var(--white-txcolor);
-
-  border: 1px solid #eeeeee;
 }
+
 .filter-title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -389,21 +398,19 @@ img {
 .footer .logo-white {
   color: var(--white-txcolor);
 }
+.location-list .location-item + .location-item {
+  margin-top: 9px;
+}
 .location {
   font-style: normal;
 }
 .map {
-  display: inline-block;
-  margin-bottom: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--white-txcolor);
 }
-.footer .mailto {
-  display: inline-block;
-  margin-bottom: 9px;
-}
+
 .footer .link {
   line-height: 1.71;
   letter-spacing: 0.03em;
