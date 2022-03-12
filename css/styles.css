@@ -50,10 +50,10 @@ p {
   padding: 0;
   margin: 0;
 }
-img {
+/* img {
   display: block;
   max-width: 100%;
-}
+} */
 
 .underlinenone {
   text-decoration: none;
@@ -84,8 +84,8 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
 .main-nav {
@@ -105,18 +105,25 @@ img {
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
-}
-
-.logo-part {
   color: var(--accent-color);
 }
+
+.header-container .logo-part {
+  color: var(--logo-color);
+}
 .link.general {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -150,19 +157,23 @@ img {
   text-align: center;
   background-color: var(--secondary-bgcolor);
 }
+.hero-inner {
+  display: inline-block;
+  max-width: 696px;
+  text-align: center;
+}
 .hero-title {
   margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--white-txcolor);
 }
+
 .btn {
   display: inline-block;
   border: 1px solid transparent;
@@ -358,19 +369,17 @@ img {
 }
 .filter-container {
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
 
 .filter-content {
   padding: 20px 24px;
-  /* border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee; */
 }
 .filter-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   background-color: var(--white-txcolor);
 }
 
@@ -394,12 +403,14 @@ img {
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.footer .logo-white {
+.footer .logo-part {
   color: var(--white-txcolor);
 }
-.location-list .location-item + .location-item {
-  margin-top: 9px;
+.location-list > .location-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .location {
   font-style: normal;
